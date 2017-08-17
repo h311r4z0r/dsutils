@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>domain_separation_utilities</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-17 21:46:55</sys_created_on>
+        <sys_id>4b8213070f2403008fc547bce1050eed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Domain Separation Utilities</sys_name>
+        <sys_package display_value="Domain Separation Utilities" source="x_140721_ds_utls">95f48f0b0fe003008fc547bce1050eb9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domain Separation Utilities">95f48f0b0fe003008fc547bce1050eb9</sys_scope>
+        <sys_update_name>sys_ui_view_4b8213070f2403008fc547bce1050eed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-17 21:46:55</sys_updated_on>
+        <title>Domain Separation Utilities</title>
+        <user/>
+    </sys_ui_view>
+</record_update>
