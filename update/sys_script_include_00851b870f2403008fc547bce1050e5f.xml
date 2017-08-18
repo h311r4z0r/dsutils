@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
-        <api_name>x_140721_ds_utls.dsuUtilities</api_name>
+        <api_name>x_140721_ds_utls.dsuUtils</api_name>
         <client_callable>false</client_callable>
         <description/>
-        <name>dsuUtilities</name>
-        <script><![CDATA[var dsuUtilities = Class.create();
-dsuUtilities.prototype = {
+        <name>dsuUtils</name>
+        <script><![CDATA[var dsuUtils = Class.create();
+dsuUtils.prototype = {
 	initialize: function() {
 	},
 	
@@ -24,13 +24,12 @@ dsuUtilities.prototype = {
 		}
 	},
 	
-	insertRecord: function(table,array){
+	insertCompanyRecord: function(table,val){
 		var gr = new GlideRecord(table);
-		gr.initiaize();
-		for(var key in array){
-			gr.setValue(key.toString(),array[key].toString());
-		}
+		gr.initialize(); 
+		gr.name = val;
 		gr.insert();
+		gs.info(gr.sys_id);
 	},
 	
 	countRecord: function(table,enq){
@@ -56,19 +55,19 @@ dsuUtilities.prototype = {
 		return send;
 	},
 	
-	type: 'dsuUtilities'
+	type: 'dsuUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-08-17 22:03:55</sys_created_on>
         <sys_id>00851b870f2403008fc547bce1050e5f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>dsuUtilities</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>dsuUtils</sys_name>
         <sys_package display_value="Domain Separation Utilities" source="x_140721_ds_utls">95f48f0b0fe003008fc547bce1050eb9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Domain Separation Utilities">95f48f0b0fe003008fc547bce1050eb9</sys_scope>
         <sys_update_name>sys_script_include_00851b870f2403008fc547bce1050e5f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-17 22:03:55</sys_updated_on>
+        <sys_updated_on>2017-08-18 03:44:54</sys_updated_on>
     </sys_script_include>
 </record_update>
