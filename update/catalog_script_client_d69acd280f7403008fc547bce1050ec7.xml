@@ -15,7 +15,7 @@
         <field/>
         <global>true</global>
         <messages/>
-        <name>Copy Company to Domain</name>
+        <name>[DSU]  New Request - Copy Cmp to Dmn</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
    if (isLoading || newValue == '') {
@@ -29,15 +29,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d69acd280f7403008fc547bce1050ec7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Copy Company to Domain</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>[DSU]  New Request - Copy Cmp to Dmn</sys_name>
         <sys_overrides/>
         <sys_package display_value="Domain Separation Utilities" source="x_140721_ds_utls">95f48f0b0fe003008fc547bce1050eb9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Domain Separation Utilities">95f48f0b0fe003008fc547bce1050eb9</sys_scope>
         <sys_update_name>catalog_script_client_d69acd280f7403008fc547bce1050ec7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-22 03:47:10</sys_updated_on>
+        <sys_updated_on>2017-08-22 05:42:16</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

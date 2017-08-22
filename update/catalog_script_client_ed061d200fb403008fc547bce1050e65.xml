@@ -15,7 +15,7 @@
         <field/>
         <global>true</global>
         <messages/>
-        <name>Validate Form</name>
+        <name>[DSU] New Request - Validate Form</name>
         <order/>
         <script><![CDATA[function onSubmit() {
 	var error_total = 0;
@@ -33,60 +33,63 @@
 	var zip = g_form.getValue('slt_company_zip');
 	var clean_zip = zip.replace(/[^0-9]/g, '');
 	
-	if(clean_phone.length != 10){
+	if(clean_phone.length != 10 && phone.length != 0){
 		g_form.showErrorBox('slt_company_phone','Phone number must be 10 digits in length');
 		error_total = parseInt(error_total) + 1;
 	}
-	if(clean_fax.length != 10){
+	if(clean_fax.length != 10 && fax.length != 0){
 		g_form.showErrorBox('slt_company_fax','Fax number must be 10 digits in length');
 		error_total = parseInt(error_total) + 1;
 	}
-	if(clean_zip.length != 5){
+	if(clean_zip.length != 5 && zip.length != 0){
 		g_form.showErrorBox('slt_company_zip','Zip / Postal Code must be 5 digits in length');
 		error_total = parseInt(error_total) + 1;
 	}
+	
 	if(error_total > 0){
 		return false;
 	}else{
+	
 		var format_phone = formatPhoneNumber(clean_phone);
-		g_form.setValue('slt_company_phone',format_phone);
+ 		g_form.setValue('slt_company_phone',format_phone);
 		
-		var format_fax = formatPhoneNumber(clean_fax);
-		g_form.setValue('slt_company_fax',format_fax);
+ 		var format_fax = formatPhoneNumber(clean_fax);
+ 		g_form.setValue('slt_company_fax',format_fax);
 		
-		var format_zip = formatZipCode(clean_zip);
-		g_form.setValue('slt_company_zip',format_zip);
+ 		var format_zip = formatZipCode(clean_zip);
+ 		g_form.setValue('slt_company_zip',format_zip);
 		
 		return true;
 	}
+	
 }
 
 function formatZipCode(zip) {
 	var cz = (""+zip).replace(/\D/g, '');
-	var nz = cp.match(/^(\d{5})$/);
+	var nz = cz.match(/^(\d{5})$/);
 		return (!nz) ? null : nz[1];
 	}
 	
-	function formatPhoneNumber(phone) {
-		var cp = (""+phone).replace(/\D/g, '');
-		var np = cp.match(/^(\d{3})(\d{3})(\d{4})$/);
-			return (!np) ? null : "(" + np[1] + ") " + np[2] + "-" + np[3];
-		}]]></script>
+function formatPhoneNumber(phone) {
+	var cp = (""+phone).replace(/\D/g, '');
+	var np = cp.match(/^(\d{3})(\d{3})(\d{4})$/);
+		return (!np) ? null : "(" + np[1] + ") " + np[2] + "-" + np[3];
+	}]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-08-22 04:48:33</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ed061d200fb403008fc547bce1050e65</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Validate Form</sys_name>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>[DSU] New Request - Validate Form</sys_name>
         <sys_overrides/>
         <sys_package display_value="Domain Separation Utilities" source="x_140721_ds_utls">95f48f0b0fe003008fc547bce1050eb9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Domain Separation Utilities">95f48f0b0fe003008fc547bce1050eb9</sys_scope>
         <sys_update_name>catalog_script_client_ed061d200fb403008fc547bce1050e65</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-22 04:56:03</sys_updated_on>
+        <sys_updated_on>2017-08-22 05:40:43</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>10</ui_type>

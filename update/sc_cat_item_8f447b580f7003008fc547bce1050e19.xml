@@ -66,7 +66,7 @@
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
-        <workflow display_value="[DSU] New - Company/Domain">6304db070f2403008fc547bce1050e2d</workflow>
+        <workflow display_value="[DSU] New Request">6304db070f2403008fc547bce1050e2d</workflow>
     </sc_cat_item>
     <sys_translated_text action="delete_multiple" query="documentkey=8f447b580f7003008fc547bce1050e19"/>
     <fx_price action="delete_multiple" query="id=8f447b580f7003008fc547bce1050e19"/>
