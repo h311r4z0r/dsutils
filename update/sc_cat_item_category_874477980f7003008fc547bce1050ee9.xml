@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Create Domain">8f447b580f7003008fc547bce1050e19</sc_cat_item>
+        <sc_cat_item display_value="New Request">8f447b580f7003008fc547bce1050e19</sc_cat_item>
         <sc_category display_value="Domain Separation">06c5cbcb0fe003008fc547bce1050e6b</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>admin</sys_created_by>

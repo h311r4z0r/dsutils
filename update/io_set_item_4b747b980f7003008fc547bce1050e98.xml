@@ -2,7 +2,7 @@
 <record_update table="io_set_item">
     <io_set_item action="INSERT_OR_UPDATE">
         <order>200</order>
-        <sc_cat_item display_value="Create Domain">8f447b580f7003008fc547bce1050e19</sc_cat_item>
+        <sc_cat_item display_value="New Request">8f447b580f7003008fc547bce1050e19</sc_cat_item>
         <sys_class_name>io_set_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-08-21 21:27:34</sys_created_on>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["c4080da40f7403008fc547bce1050eaf"],"subflows":[],"stages":{},"activities":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description/>
+        <expected_sequences>00080da40f7403008fc547bce1050eae,88080da40f7403008fc547bce1050eae,0808c1640f7403008fc547bce1050ec0,c4080da40f7403008fc547bce1050eaf</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>00080da40f7403008fc547bce1050eae,88080da40f7403008fc547bce1050eae,0808c1640f7403008fc547bce1050ec0,c4080da40f7403008fc547bce1050eaf</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>[DSU] Create/Update - Domain</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>user_specified</stage_order>
+        <start display_value="Begin">00080da40f7403008fc547bce1050eae</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>c408c1640f7403008fc547bce1050ebe</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:41:01</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="[DSU] Create/Update - Domain">7ae305e00f7403008fc547bce1050e8b</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>[DSU] Create/Update - Domain</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:14:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ae305e00f7403008fc547bce1050e8b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>[DSU] Create/Update - Domain</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Domain Separation Utilities" source="x_140721_ds_utls">95f48f0b0fe003008fc547bce1050eb9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Domain Separation Utilities">95f48f0b0fe003008fc547bce1050eb9</sys_scope>
+        <sys_update_name>wf_workflow_7ae305e00f7403008fc547bce1050e8b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:33:18</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>0c08c1640f7403008fc547bce1050ebf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="[DSU] Create/Update - Domain">c408c1640f7403008fc547bce1050ebe</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Delivery</name>
+        <ola>1970-01-03 00:00:00</ola>
+        <order>140</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>8c08c1640f7403008fc547bce1050ebf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <value>delivery</value>
+        <workflow_version display_value="[DSU] Create/Update - Domain">c408c1640f7403008fc547bce1050ebe</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Fulfillment</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>120</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>c408c1640f7403008fc547bce1050ebf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <value>fulfillment</value>
+        <workflow_version display_value="[DSU] Create/Update - Domain">c408c1640f7403008fc547bce1050ebe</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>8008c1640f7403008fc547bce1050ec0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="[DSU] Create/Update - Domain">c408c1640f7403008fc547bce1050ebe</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>90</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>8808c1640f7403008fc547bce1050ebf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <value>request_approved</value>
+        <workflow_version display_value="[DSU] Create/Update - Domain">c408c1640f7403008fc547bce1050ebe</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Waiting for Approval</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>0008c1640f7403008fc547bce1050ec0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <value>waiting_for_approval</value>
+        <workflow_version display_value="[DSU] Create/Update - Domain">c408c1640f7403008fc547bce1050ebe</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>00080da40f7403008fc547bce1050eae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="[DSU] Create/Update - Domain">c408c1640f7403008fc547bce1050ebe</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=00080da40f7403008fc547bce1050eae"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">00080da40f7403008fc547bce1050eae</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>c0080da40f7403008fc547bce1050eae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create Domain</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>88080da40f7403008fc547bce1050eae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="[DSU] Create/Update - Domain">c408c1640f7403008fc547bce1050ebe</workflow_version>
+        <x>19</x>
+        <y>114</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=88080da40f7403008fc547bce1050eae"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>88080da40f7403008fc547bce1050eae</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>0c080da40f7403008fc547bce1050eae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <value>//insert domain and capture sys_id&#13;
+workflow.scratchpad.domain_id = new x_140721_ds_utls.dsuUtils().insertRecord("domain",current.variables.slt_domain_name);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>88080da40f7403008fc547bce1050eae</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>0c080da40f7403008fc547bce1050eae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <value>//insert domain and capture sys_id&#13;
+workflow.scratchpad.domain_id = new x_140721_ds_utls.dsuUtils().insertRecord("domain",current.variables.slt_domain_name);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Domain">88080da40f7403008fc547bce1050eae</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>00080da40f7403008fc547bce1050eaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>c4080da40f7403008fc547bce1050eaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="[DSU] Create/Update - Domain">c408c1640f7403008fc547bce1050ebe</workflow_version>
+        <x>24</x>
+        <y>287</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=c4080da40f7403008fc547bce1050eaf"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Update Company</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>0808c1640f7403008fc547bce1050ec0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="[DSU] Create/Update - Domain">c408c1640f7403008fc547bce1050ebe</workflow_version>
+        <x>21</x>
+        <y>197</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=0808c1640f7403008fc547bce1050ec0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0808c1640f7403008fc547bce1050ec0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>c0080da40f7403008fc547bce1050ead</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <value>//map the type for domain&#13;
+var domain_type = "Customer"; //set Customer as default&#13;
+if(current.variables.sb_company_type == "customer"){&#13;
+	domain_type = "Customer";&#13;
+}&#13;
+if(current.variables.sb_company_type == "manufacturer"){&#13;
+	domain_type = "Vendor";&#13;
+}&#13;
+if(current.variables.sb_company_type == "vendor"){&#13;
+	domain_type = "Vendor";&#13;
+}&#13;
+&#13;
+&#13;
+//update values for domain&#13;
+var domain_array = {"fields":["type","parent"],"values":[domain_type,current.variables.ref_domain_parent]};&#13;
+new x_140721_ds_utls.dsuUtils().updateRecord("domain","sys_id="+workflow.scratchpad.domain_id,domain_array);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0808c1640f7403008fc547bce1050ec0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>c0080da40f7403008fc547bce1050ead</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <value>//map the type for domain&#13;
+var domain_type = "Customer"; //set Customer as default&#13;
+if(current.variables.sb_company_type == "customer"){&#13;
+	domain_type = "Customer";&#13;
+}&#13;
+if(current.variables.sb_company_type == "manufacturer"){&#13;
+	domain_type = "Vendor";&#13;
+}&#13;
+if(current.variables.sb_company_type == "vendor"){&#13;
+	domain_type = "Vendor";&#13;
+}&#13;
+&#13;
+&#13;
+//update values for domain&#13;
+var domain_array = {"fields":["type","parent"],"values":[domain_type,current.variables.ref_domain_parent]};&#13;
+new x_140721_ds_utls.dsuUtils().updateRecord("domain","sys_id="+workflow.scratchpad.domain_id,domain_array);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Update Company">0808c1640f7403008fc547bce1050ec0</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>c4080da40f7403008fc547bce1050ead</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">c0080da40f7403008fc547bce1050eae</condition>
+        <from display_value="Begin">00080da40f7403008fc547bce1050eae</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>40080da40f7403008fc547bce1050eb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <to display_value="Create Domain">88080da40f7403008fc547bce1050eae</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">c4080da40f7403008fc547bce1050ead</condition>
+        <from display_value="Update Company">0808c1640f7403008fc547bce1050ec0</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>48080da40f7403008fc547bce1050eb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <to display_value="End">c4080da40f7403008fc547bce1050eaf</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">00080da40f7403008fc547bce1050eaf</condition>
+        <from display_value="Create Domain">88080da40f7403008fc547bce1050eae</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>84080da40f7403008fc547bce1050eb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <to display_value="Update Company">0808c1640f7403008fc547bce1050ec0</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-22 03:32:28</sys_created_on>
+        <sys_id>4808c1640f7403008fc547bce1050ebe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-22 03:32:28</sys_updated_on>
+        <workflow_version display_value="[DSU] Create/Update - Domain">c408c1640f7403008fc547bce1050ebe</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=7ae305e00f7403008fc547bce1050e8b^sys_id!=c408c1640f7403008fc547bce1050ebe">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
