@@ -3,7 +3,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Create Domain">e386070f0fe003008fc547bce1050e43</cat_item>
+        <cat_item/>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -33,15 +33,15 @@
         <lookup_unique>false</lookup_unique>
         <lookup_value/>
         <macro/>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>slt_company_name</name>
-        <order>110</order>
+        <name>slt_company_phone</name>
+        <order>30</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
-        <question_text>Company Name</question_text>
+        <question_text>Phone</question_text>
         <read_roles/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
@@ -58,16 +58,16 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-08-17 20:58:43</sys_created_on>
-        <sys_id>3a178b0f0fe003008fc547bce1050ef1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Company Name</sys_name>
+        <sys_created_on>2017-08-21 19:59:08</sys_created_on>
+        <sys_id>2f306b980f3003008fc547bce1050e9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Phone</sys_name>
         <sys_package display_value="Domain Separation Utilities" source="x_140721_ds_utls">95f48f0b0fe003008fc547bce1050eb9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Domain Separation Utilities">95f48f0b0fe003008fc547bce1050eb9</sys_scope>
-        <sys_update_name>item_option_new_3a178b0f0fe003008fc547bce1050ef1</sys_update_name>
+        <sys_update_name>item_option_new_2f306b980f3003008fc547bce1050e9c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-17 21:26:42</sys_updated_on>
+        <sys_updated_on>2017-08-21 19:59:08</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>
@@ -75,7 +75,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <variable_name/>
-        <variable_set/>
+        <variable_set display_value="Company Information">783f9f580f3003008fc547bce1050eab</variable_set>
         <variable_width/>
         <visibility>1</visibility>
         <visible_bundle>true</visible_bundle>
@@ -84,22 +84,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=3a178b0f0fe003008fc547bce1050ef1"/>
-    <fx_price action="delete_multiple" query="id=3a178b0f0fe003008fc547bce1050ef1"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=2f306b980f3003008fc547bce1050e9c"/>
+    <fx_price action="delete_multiple" query="id=2f306b980f3003008fc547bce1050e9c"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>3a178b0f0fe003008fc547bce1050ef1</id>
+        <id>2f306b980f3003008fc547bce1050e9c</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-08-17 20:58:43</sys_created_on>
-        <sys_id>0d87430f0fe003008fc547bce1050e08</sys_id>
+        <sys_created_on>2017-08-21 19:59:08</sys_created_on>
+        <sys_id>a7306b980f3003008fc547bce1050e9e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-17 20:58:43</sys_updated_on>
+        <sys_updated_on>2017-08-21 19:59:08</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -107,16 +107,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>3a178b0f0fe003008fc547bce1050ef1</id>
+        <id>2f306b980f3003008fc547bce1050e9c</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-08-17 20:58:43</sys_created_on>
-        <sys_id>c187430f0fe003008fc547bce1050e08</sys_id>
+        <sys_created_on>2017-08-21 19:59:08</sys_created_on>
+        <sys_id>6f306b980f3003008fc547bce1050e9d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-17 20:58:43</sys_updated_on>
+        <sys_updated_on>2017-08-21 19:59:08</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
